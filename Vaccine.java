@@ -10,16 +10,16 @@ public class Vaccine {
 	        t.setName("Paviee");
 	        System.out.println(new Date());
 	        System.out.println("Before comming to class....");
-	        Thread kala=new Thread(new JobToKala(vc),"Shavani");
-	        kala.start();
-	        //vc.getToken();
+	        Thread Shavani=new Thread(new JobToShavani(vc),"Shavani");
+	        Shavani.start();
+	        
 	        System.out.println("Take class.....for 7-9 Golden Batch...."+new Date());
 	        new Thread(()->System.out.println("vaccination")).start();
 	    }    
 	}
 	class JobToKala implements Runnable{
 	    VaccinationCenter vc;
-	    public JobToKala(VaccinationCenter vc) {
+	    public JobToShavani(VaccinationCenter vc) {
 	        this.vc=vc;
 	    }
 	@Override
