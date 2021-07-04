@@ -17,7 +17,7 @@ public class Vaccine {
 	        new Thread(()->System.out.println("vaccination")).start();
 	    }    
 	}
-	class JobToKala implements Runnable{
+	class JobToShavani implements Runnable{
 	    VaccinationCenter vc;
 	    public JobToShavani(VaccinationCenter vc) {
 	        this.vc=vc;
